@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('restaurant-header.jpg');
+            background-size: cover;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        article {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-item img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 20px;
+        }
+
+        .filter {
+            margin-bottom: 20px;
+        }
+
+        .filter label {
+            margin-right: 10px;
+        }
+
+        .search-field {
+            margin-bottom: 20px;
+        }
+
+        .search-field input {
+            padding: 8px;
+            width: 200px;
+        }
+
+        .sorting-filter {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Delicious food served with a smile</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Reservations</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <div class="filter">
+            <label for="category">Filter by Category:</label>
+            <select id="category">
+                <option value="appetizers">Appetizers</option>
+                <option value="main-dishes">Main Dishes</option>
+                <option value="desserts">Desserts</option>
+            </select>
+        </div>
+
+        <div class="search-field">
+            <label for="search">Search:</label>
+            <input type="text" id="search" placeholder="Search menu...">
+        </div>
+
+        <div class="sorting-filter">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="alphabetical">Alphabetical</option>
+                <option value="price">Price</option>
+            </select>
+        </div>
+
+        <div class="menu-item">
+            <img src="appetizer1.jpg" alt="Appetizer 1">
+            <div>
+                <h2>Appetizer 1</h2>
+                <p>Description of the appetizer. This can include text, images, and videos.</p>
+                <button>Add to Cart</button>
+            </div>
+            <p>$9.99</p>
+        </div>
+
+        <!-- More menu items go here -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Our Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
